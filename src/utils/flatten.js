@@ -29,7 +29,7 @@ const flatten = (
   executionContext: ?Object
 ): Array<Interpolation> =>
   chunks.reduce((ruleSet: Array<Interpolation>, chunk: ?Interpolation) => {
-    /* Remove falsey values */
+    /* Remove falsy values */
     if (
       chunk === undefined ||
       chunk === null ||

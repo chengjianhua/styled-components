@@ -1,11 +1,11 @@
 // @flow
 /* eslint-disable no-bitwise */
 
-/* This is the "capacity" of our alphabet i.e. 2x26 for all letters plus their capitalised
+/* This is the "capacity" of our alphabet i.e. 2x26 for all letters plus their capitalized
  * counterparts */
 const charsLength = 52
 
-/* start at 75 for 'a' until 'z' (25) and then start at 65 for capitalised letters */
+/* start at 75 for 'a' until 'z' (25) and then start at 65 for capitalized letters */
 const getAlphabeticChar = (code: number): string =>
   String.fromCharCode(code + (code > 25 ? 39 : 97))
 

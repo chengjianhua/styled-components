@@ -22,7 +22,7 @@ export const resetIdNames = (names: Names, id: string) => {
   names[id] = (Object.create(null): Object)
 }
 
-/* factory for a names dictionary checking the existance of an ID:name pairing */
+/* factory for a names dictionary checking the existence of an ID:name pairing */
 export const hasNameForId = (names: Names) => (id: string, name: string) =>
   names[id] !== undefined && names[id][name]
 
